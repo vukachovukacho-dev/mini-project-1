@@ -41,14 +41,14 @@ namespace mini_project_1.Models
             }
         }
 
-        // Make sure this is marked 'public'
+        
         public string Translate(string word)
         {
             string key = word.Trim().ToLower();
             return _words.TryGetValue(key, out string translation) ? translation : null;
         }
 
-        // Make sure this is marked 'public'
+        
         public void AddTranslation(string word, string translation)
         {
             string key = word.Trim().ToLower();
